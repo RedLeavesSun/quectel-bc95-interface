@@ -382,7 +382,6 @@ int Quectel_BC95_recv_data(unsigned char *remote_addr, unsigned char *data, unsi
                 recv_len = StrToHex(data, tmp1);
             }
         }
-        memset(s_device->received_data_info, 0, 8);
     }
 
     return recv_len;
